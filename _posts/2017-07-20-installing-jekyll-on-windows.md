@@ -21,30 +21,31 @@ If you've been paying attention to trends in web development over the past few y
   In fact, you don't even have to install Jekyll (or anything else) locally at all -- GitHub Pages builds and serves the website for you, so you can simply push your unbuilt files to your repo as needed.
   
   *However*, if you are interested at all in developing your own theme (or any other major customization effort), you'll probably want to install Jekyll locally so that you can test your changes without having to push and wait
-  for GitHub to build your site each time. If you're using a Mac or Linux, installing Jekyll is super-easy and there are already tons of guides addressing the [process](https://www.taniarascia.com/make-a-static-website-with-jekyll/) (so I won't). If you're using Windows... well, that's a different story entirely my friends!
+  for GitHub to build your site each time. If you're using a Mac or Linux, installing Jekyll is super-easy and there are already tons of guides addressing the [process](https://www.taniarascia.com/make-a-static-website-with-jekyll/) (so I won't).
+  If you're using Windows... well, that's a different story entirely my friends!
   
 ## Where's my Windows `terminal`?
   Most of the guides written for [how to install Jekyll](http://jekyllrb.com/docs/installation/) (and all of its dependencies, such as Ruby) describe the command-line process used for Linux, Unix, or macOS.
   If you're stuck using Windows, we need to back up a bit first and get something that will provide us with a similar "terminal" install environment.
   
   The official docs for Jekyll include instructions for [installing Jekyll on Windows](http://jekyllrb.com/docs/windows/) but they are, frankly, a bit of a mess (and somewhat incomplete -- I couldn't get it working as written.)
-  However, those instructions *did* point me toward the new [Bash on Ubuntu on Windows](https://msdn.microsoft.com/en-us/commandline/wsl/about), which is *EXACTLY* what's needed here -- an actual bash (Unix) terminal! Ideally, once we
+  However, those instructions *did* point me toward the new [Bash on Ubuntu on Windows](https://msdn.microsoft.com/en-us/commandline/wsl/about), which is *exactly* what's needed here -- an actual bash (Unix) terminal! Ideally, once we
   get that installed, we *should* be able to simply follow along with the Linux/Unix/macOS directions, rather than trying to cobble together a working system from VMs, emulators, and Windows-specific package managers.
   
-  My recommendation if you're running Windows 10: ignore the official instructions and refer to the guides linked below.
+  My recommendation if you're running Windows 10: ignore the official instructions linked above, and instead refer to the guides linked below.
   
   *(My recommendation if you're running Windows <10: upgrade to Windows 10.)*
   
 ## Installing Jekyll on Windows: step by step
   
-  1. Follow the [Bash on Ubuntu on Windows Installation Guide](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide):
+  1. Follow the [Bash on Ubuntu on Windows installation guide](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide):
      - **Check your OS Build** and **Install the Windows Subsystem for Linux** (the first two steps).
-     - If you don't want to sign up as a "Windows Insider", skip that section (I was able to get things working without it)
+     - If you don't want to sign up as a "Windows Insider", skip that section (I got things working without it)
      - Follow the next section to **Install using lxrun**.
      
   2. Follow [Dave Ruper's guide to install Jekyll](http://daverupert.com/2016/04/jekyll-on-windows-with-bash/) on Bash on Ubuntu on Windows.
   
-  3. Browse to your site at [http://localhost:4000](http://localhost:4000). (Optionally: Jump for Joy!)
+  3. Browse to your site at [http://localhost:4000](http://localhost:4000). *(Optionally: Jump for Joy!)*
   
   4. If you run into errors when trying to `jekyll serve` locally, try one or more of the following:
   
