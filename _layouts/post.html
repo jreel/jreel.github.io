@@ -1,0 +1,30 @@
+---
+# layout for a single blog post / article
+layout: default
+excerpt_separator: "<!--more-->"
+---
+
+<article class="post">
+  <h1 class="post-title">{{ page.title }}</h1>
+  <span class="post-date">{{ page.date | date_to_string }}</span>
+  {{ content }}
+
+  <div class="related">
+    <h2>Related:</h2>
+    <ul class="related-posts">
+      {% for post in site.related_posts limit:3 %}
+      <li>
+        <h3>
+          <a href="{{ post.url }}">
+            {{ post.title }}
+          </a>
+        </h3>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</article>
+
+{% include disqus.html %}
+
+
