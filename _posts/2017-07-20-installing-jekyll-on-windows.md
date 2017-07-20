@@ -10,8 +10,8 @@ If you've been paying attention to trends in web development over the past few y
  [movement toward static website generators](https://www.smashingmagazine.com/2015/11/modern-static-website-generators-next-big-thing/). 
  Makes sense, especially with a "mobile-first" motto, since static websites can be delivered much faster (among [other benefits](https://wsvincent.com/static-vs-dynamic-websites-pros-and-cons/)).
  
- [Jekyll]() is one of the leading players in the static website generator arena. Without going into too much detail, Jekyll takes plaintext (Markdown) files, renders them through user-defined
- layout templates, and spits out static HTML files, with everything nicely linked together. One of the aspects that makes it especially appealing is that it is used by [GitHub Pages](), which provides free personal 
+ [Jekyll](https://jekyllrb.com/) is one of the leading players in the static website generator arena. Without going into too much detail, Jekyll takes plaintext (Markdown) files, renders them through user-defined
+ layout templates, and spits out static HTML files, with everything nicely linked together. One of the aspects that makes it especially appealing is that it is used by [GitHub Pages](https://pages.github.com/), which provides free personal 
  and project websites for GitHub users. This means that if you already have a GitHub account, you also already have a web host -- all you need to do is set it up.
  
 ## GitHub + Jekyll: starting out
@@ -35,7 +35,7 @@ If you've been paying attention to trends in web development over the past few y
   
   *(My recommendation if you're running Windows <10: upgrade to Windows 10.)*
   
-## Installing Jekyll on Windows: Step By Step
+## Installing Jekyll on Windows: step by step
   
   1. Follow the [Bash on Ubuntu on Windows Installation Guide](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide):
      - **Check your OS Build** and **Install the Windows Subsystem for Linux** (the first two steps).
@@ -60,10 +60,10 @@ If you've been paying attention to trends in web development over the past few y
   6. If you want, you can install the `github-pages` gem locally, to make sure that your local build environment matches GitHub's. The best way seems to be:
      - Install the Bundler package manager: `sudo gem install bundler`
      - Create (or edit) a `Gemfile` in your project directory and add the the following lines to it:
-     {% highlight bash %}
-       source 'https://rubygems.org'
-       gem 'github-pages'
-     {% endhighlight %}
+         ~~~~~~~~~~
+         source 'https://rubygems.org'
+         gem 'github-pages'
+         ~~~~~~~~~~~~
      - Inside the directory containing the above Gemfile, run `sudo bundle install`.
      
   7. If you notice lots of 404's and/or lack of styling in your built site (whether before or after deploying to GitHub), be sure
@@ -71,9 +71,9 @@ If you've been paying attention to trends in web development over the past few y
      It describes the correct way to set up your `_config.yml` and theme templates so that your site just **works**, whether locally or hosted, whether it's a GitHub user page or project page.
 
 
-## Other Useful Guides
-  
-  See also:
+## Continuing the journey
+
+I hope the guide was useful -- let me know! Also, check out the following additional resources:
   
   - [Jekyll docs](http://jekyllrb.com/docs/usage/) obviously... (With the exception of the install instructions for Windows, the Jekyll docs are actually pretty informative and straightforward.)
   
