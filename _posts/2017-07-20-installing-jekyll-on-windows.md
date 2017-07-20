@@ -58,7 +58,7 @@ If you've been paying attention to trends in web development over the past few y
      If you get errors when trying to `gem install` anything, check [Dave's guide to install Ruby](http://daverupert.com/2016/06/ruby-on-rails-on-bash-on-ubuntu-on-windows/) to see how to install some
      dependencies that you might be missing (typically the XML libs for Nokogiri).
      
-  6. If you want, you can install the `github-pages` gem locally, to make sure that your local build environment matches GitHub's. The best way seems to be:
+  6. If you want, you can install the `github-pages` gem, to ensure that your local build environment matches GitHub's. The best way seems to be:
      - Install the Bundler package manager: `sudo gem install bundler`
      - Create (or edit) a `Gemfile` in your project directory and add the the following lines to it:
          ~~~~~~~~~~
