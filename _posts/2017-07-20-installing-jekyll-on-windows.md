@@ -48,7 +48,7 @@ If you've been paying attention to trends in web development over the past few y
   
   4. If you run into errors when trying to `jekyll serve` locally, try one or more of the following:
   
-     - If the error message includes the text `Failed to watch` and/or `inotify`, you are suffering from the bug described at the top of the above guide. Try running either:
+     - If the error message includes the text `Failed to watch` and/or mentions something called `inotify`, you are likely suffering from the bug described at the top of the above guide. Try running either:
           - `jekyll serve --no-watch` or
           - `jekyll serve --force_polling`
      - For error messages which mention `bundler`, try running `bundle exec jekyll serve` (optionally with one of the flags above).
