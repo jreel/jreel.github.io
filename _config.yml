@@ -1,11 +1,11 @@
 ---
 # Site settings
 locale:  "en"
-title:  "jreel.github.io"
+title:  "jreel"
 title_separator:  " | "
 name:  "Jessica Reel"
 tagline:  "yet another github user site"
-description:  "The personal website and developer portfolio of Jessica Reel"
+description:  "my personal site / dev portfolio"
 url:  ""
 baseurl:  ""
 logo: # path to your logo.png
