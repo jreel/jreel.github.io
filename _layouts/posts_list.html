@@ -1,12 +1,12 @@
 ---
 # layout for showing a paginated listing of all posts
 layout: default
-excerpt_separator: "<!--more-->"
 ---
 
 <div class="posts">
+    <ul class="post-list">
     {% for post in paginator.posts %}
-    <div class="post">
+    <li class="post">
         <h1 class="post-title">
             <a href="{{ site.baseurl }}{{ post.url }}">
                 {{ post.title }}
@@ -15,9 +15,20 @@ excerpt_separator: "<!--more-->"
 
         <span class="post-date">{{ post.date | date_to_string }}</span>
 
-        {{ post.content }}
-    </div>
+        {{ post.excerpt }}
+        {% capture content_words %}
+            {{ post.content | number_of_words }}
+        {% endcapture %}
+        {% capture excerpt_words %}
+            {{ post.excerpt | number_of_words }}
+        {% endcapture %}
+        {% if excerpt_words != content_words %}
+        <span> ... <a class="" href="{{ site.baseurl }}{{ post.url }}">more &raquo;</a>
+        </span>
+        {% endif %}
+    </li>
     {% endfor %}
+    </ul>
 </div>
 
 <div class="pagination">

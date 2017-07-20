@@ -333,6 +333,19 @@ tbody tr:nth-child(odd) th {
   margin-bottom: 4em;
 }
 
+ul.post-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li.post {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 2em;
+}
+
 /* Blog post or page title */
 .page-title,
 .post-title,

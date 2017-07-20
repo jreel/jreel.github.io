@@ -1,13 +1,12 @@
 ---
 # layout for a single blog post / article
 layout: default
-excerpt_separator: "<!--more-->"
 ---
 
 <article class="post">
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-date">{{ page.date | date_to_string }}</span>
-  {{ content }}
+  {{ content | replace: site.excerpt_separator, '<a class="anchor" id="read-more"></a>' }}
 
   <div class="related">
     <h2>Related:</h2>
