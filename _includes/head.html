@@ -9,9 +9,9 @@
 
   <title>
     {% if page.title == "" %}
-      {{ site.title }} &middot; {{ site.tagline }}
+      {{ site.title }} : {{ site.tagline }}
     {% else %}
-      {{ page.title }} &middot; {{ site.title }}
+       {{ site.title }} : {{ page.title }}
     {% endif %}
   </title>
 
@@ -26,7 +26,7 @@
 
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/public/apple-touch-icon-144-precomposed.png">
-                                 <link rel="shortcut icon" href="{{ site.baseurl }}/public/favicon.ico">
+  <link rel="shortcut icon" href="{{ site.baseurl }}/public/favicon.ico">
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">

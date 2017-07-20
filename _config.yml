@@ -7,7 +7,7 @@ name:  "Jessica Reel"
 tagline:  "jreel.github.io"
 description:  "my personal site / dev portfolio"
 url:  ""
-baseurl:  ""
+baseurl:  ""  # empty for GitHub User page; "/your-repo" (NO trailing slash) for Project page
 logo: # path to your logo.png
 
 disqus:  #false
