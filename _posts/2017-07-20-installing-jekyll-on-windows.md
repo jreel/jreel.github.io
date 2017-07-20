@@ -72,6 +72,8 @@ If you've been paying attention to trends in web development over the past few y
   
   - [Jekyll and GitHub tips for designers](https://michellehertzfeld.com/thoughts/using-jekyll-and-github-tips-for-designers/) Another "beginner" guide to Jekyll + GitHub
   
+  - [Jekyll for GitHub setup on MacOS](https://www.taniarascia.com/make-a-static-website-with-jekyll/) in case you need it
+  
   - [Configuring Jekyll for User and Project GitHub Pages](http://downtothewire.io/2015/08/15/configuring-jekyll-for-user-and-project-github-pages/) describes the correct way to set up
     your `_config.yml` and theme templates so that your site just **works**, whether locally or hosted, whether it's a GitHub user page or project page.
     
