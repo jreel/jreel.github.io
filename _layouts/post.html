@@ -21,7 +21,7 @@ comments: true
       {% endif %}
 
       {% if page.comments == true and site.disqus.shortname %}
-      &bull; <a class="disqus-comment-count" href="{{ page.url | absolute_url }}#disqus_thread" data-disqus-identifier="{{ page.url | absolute_url }}"></a>
+      &bull; <a class="disqus-comment-count" href="{{ page.url | absolute_url }}#disqus_thread" data-disqus-identifier="{{ page.url }}">Comments</a>
       {% endif %}
     </div>
 
