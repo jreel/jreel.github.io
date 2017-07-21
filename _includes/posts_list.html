@@ -1,19 +1,15 @@
----
-# layout for showing a paginated listing of all posts
-layout: default
----
-
 <div class="posts">
     <ul class="post-list">
     {% for post in paginator.posts %}
     <li class="post">
         <h1 class="post-title">
-            <a href="{{ site.baseurl }}{{ post.url }}">
-                {{ post.title }}
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                {{ post.title | escape }}
             </a>
         </h1>
 
-        <span class="post-date">{{ post.date | date_to_string }}</span>
+        {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
+        <span class="post-meta post-date">{{ post.date | date: date_format }}</span>
 
         {{ post.excerpt }}
         {% capture content_words %}
@@ -23,7 +19,7 @@ layout: default
             {{ post.excerpt | number_of_words }}
         {% endcapture %}
         {% if excerpt_words != content_words %}
-        <span> ... <a class="" href="{{ site.baseurl }}{{ post.url }}">more &raquo;</a>
+        <span> ... <a class="" href="{{ post.url | prepend: site.baseurl }}">more &raquo;</a>
         </span>
         {% endif %}
     </li>

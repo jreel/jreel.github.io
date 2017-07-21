@@ -1,18 +1,24 @@
-{% if site.disqus.shortname %}
+<!-- Disqus comments section goes here (if comments are enabled) -->
+{% if page.comments == true and jekyll.environment == "production" %}
+
 <div class="comments">
     <div id="disqus_thread"></div>
+
     <script type="text/javascript">
 
-        /* * * CONFIGURATION VARIABLES: EDIT FOR YOUR OWN SITE * * */
-        var disqus_shortname = '{{ site.disqus.shortname }}'; // required: change this in _config.yml
-        var disqus_developer = '{{ site.disqus.devmode }}'; // change in _config.yml when site goes live
-        var disqus_identifier = "{{ page.url }}";
+        /* * * STOP! * * */
+        /* You shouldn't need to edit ANYTHING below to get this working! */
+        /* Instead, edit the key `disqus.shortname` in _config.yml */
 
-        /* * * DON'T EDIT BELOW THIS LINE * * */
+        var disqus_config = function (){
+            this.page.url = '{{ page.url | absolute_url }}';
+            this.page.identifier = '{{ page.url | relative_url }}';
+        };
+
         (function() {
             var d = document, s = d.createElement('script');
             s.type = 'text/javascript'; s.async = true;
-            s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            s.src = 'https://{{ site.disqus.shortname }}.disqus.com/embed.js';
             s.setAttribute('data-timestamp', +new Date());
             (d.head || d.body).appendChild(s);
         })();
@@ -20,4 +26,5 @@
     </script>
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
+
 {% endif %}

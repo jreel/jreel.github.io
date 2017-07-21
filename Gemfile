@@ -10,23 +10,21 @@ source "https://rubygems.org"
 # Happy Jekylling!
 # gem "jekyll", "3.5.1"
 
-# This is the default theme for new Jekyll sites. You may change this to anything you like.
+# This is the default theme for new Jekyll sites.
+# To change, edit the `theme:` setting in _config.yml
+#   and uncomment / edit the line below as appropriate
 # gem "minima", "~> 2.0"
 
-# If you want to use GitHub Pages, remove the "gem "jekyll"" above and
+# If you want to use GitHub Pages, remove the `gem "jekyll"` above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 gem "github-pages", group: :jekyll_plugins
 
 # If you have any plugins, put them here!
+# probably not needed if you're using the github-pages gem
 group :jekyll_plugins do
-   gem "jekyll-feed", "~> 0.9.2"
-   gem "jekyll-paginate", "~> 1.1"
-   gem "jekyll-sitemap", "~> 1.0"
-   gem "jekyll-gist", "~> 1.4"
-   gem "jemoji", "~> 0.8"
-   gem "classifier-reborn"
-   gem "kramdown", "~> 1.13.2"
+
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+

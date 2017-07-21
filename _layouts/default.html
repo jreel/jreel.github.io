@@ -1,15 +1,35 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 
   {% include head.html %}
 
   <body>
 
+    {% assign jekyll_env = jekyll.environment %}
+    {% assign site_url = site.url %}
+    {% if site.github.url %}
+      {% assign site_url = site.github.url %}
+    {% endif %}
+    {% if jekyll_env == "development" %}
+      {% assign site_url = "http://localhost:4000" %}
+    {% endif %}
+
+    <!-- jekyll.environment == {{ jekyll.environment }} -->
+    <!-- site.url == {{ site.url }} -->
+    <!-- page.url == {{ page.url }} -->
+    <!-- page.url | absolute_url == {{ page.url | absolute_url }} -->
+
     {% include sidebar.html %}
 
-    <div class="content container">
-      {{ content | replace: '<!--more-->', '<a class="anchor" id="read-more"></a>' }}
-    </div>
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper content container">
+        {{ content | replace: '<!--more-->', '<a class="anchor" id="read-more"></a>' }}
+      </div>
+    </main>
 
+  {% if site.disqus.shortname %}
+    <!-- Disqus comments count -->
+    <script id="dsq-count-scr" src="https://{{ site.disqus.shortname }}.disqus.com/count.js" async></script>
+  {% endif %}
   </body>
 </html>

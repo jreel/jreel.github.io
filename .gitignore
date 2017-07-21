@@ -1,9 +1,10 @@
-# Ignore docs files
+# docs files & jekyll-built site
+_docs
 _gh_pages
 _site
+_no-include
 
-
-# Numerous always-ignore extensions
+# extensions
 *.gem
 *.diff
 *.err
@@ -16,7 +17,7 @@ _site
 *.vi
 *~
 
-# OS or Editor folders
+# OS or editor folders
 .DS_Store
 ._*
 Thumbs.db
@@ -33,7 +34,4 @@ nbproject
 .ruby-version
 .sass-cache
 .jekyll-metadata
-Gemfile.lock
-node_modules
-npm-debug.log*
-
+script

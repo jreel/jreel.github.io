@@ -4,17 +4,37 @@ layout: default
 comments: true
 ---
 
-<article class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
-  {{ content | replace: site.excerpt_separator, '<a class="anchor" id="read-more"></a>' }}
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+
+    <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+
+    <div class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
+        {{ page.date | date: date_format }}
+      </time>
+
+      {% if page.author %}
+      &bull; written by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
+      {% endif %}
+
+      {% if page.comments %}
+      {% if site.disqus.shortname %}
+      &bull; <a href="{{ page.url | prepend: site.baseurl }}index.html#disqus_thread" data-disqus-identifier="{{ page.url }}"></a>
+      {% endif %}
+      {% endif %}
+    </div>
+
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    {{ content | replace: site.excerpt_separator, '<a class="anchor" id="read-more"></a>' }}
+  </div>
 
   <div class="post-footer">
-    {% if page.comments %}
-    {% if site.disqus.shortname %}
-      <a href="{{ page.url | prepend: site.baseurl }}index.html#disqus_thread" data-disqus-identifier="{{ page.url }}"></a>
-    {% endif %}
-    {% endif %}
+
   </div>
 
   <div class="related">
@@ -22,19 +42,16 @@ comments: true
     <ul class="related-posts">
       {% for post in site.related_posts limit:3 %}
       <li>
-          <a href="{{ site.baseurl }}{{ post.url }}">
+          <a href="{{ post.url | prepend: site.baseurl }}">
             {{ post.title }}
           </a>
       </li>
       {% endfor %}
     </ul>
   </div>
+
 </article>
 
-{% if page.comments %}
+{% if site.disqus.shortname %}
 {% include disqus.html %}
-{% endif %}
-
-{% if page.comments %}
-{% include disqus-count.html %}
 {% endif %}

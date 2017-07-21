@@ -4,9 +4,11 @@ layout: default
 ---
 
 <article class="page">
-  <h1 class="post-title page-title">{{ page.title }}</h1>
+  <h1 class="post-title page-title">{{ page.title | escape }}</h1>
   {{ content }}
 
 </article>
 
+{% if site.disqus.shortname %}
 {% include disqus.html %}
+{% endif %}
