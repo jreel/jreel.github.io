@@ -10,14 +10,10 @@ url:  ""
 baseurl:  ""  # empty for GitHub User page; "/your-repo" (NO trailing slash) for Project page
 logo: # path to your logo.png
 
-disqus:  #false
-comments:
-  provider: # false (default), "disqus", "discourse", "google-plus", "custom"
-  disqus:
-    shortname: # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
-  discourse:
-    server: # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-
+# disqus settings for comments
+disqus:
+   shortname: jreel-github-io  # see https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+   devmode: 0   # remove when site goes live
 
 atom_feed:
   path:  # blank (default) uses feed.xml
