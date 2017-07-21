@@ -38,39 +38,44 @@ If you've been paying attention to trends in web development over the past few y
   
 ## Installing Jekyll on Windows: step by step
   
-  1. Follow the [Bash on Ubuntu on Windows installation guide](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide):
+1. Follow the [Bash on Ubuntu on Windows installation guide](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide):
      - **Check your OS Build** and **Install the Windows Subsystem for Linux** (the first two steps).
      - If you don't want to sign up as a "Windows Insider", skip that section (I got things working without it)
      - Follow the next section to **Install using lxrun**.
      
-  2. Follow [Dave Ruper's guide to install Jekyll](http://daverupert.com/2016/04/jekyll-on-windows-with-bash/) on Bash on Ubuntu on Windows.
+2. Follow [Dave Ruper's guide to install Jekyll](http://daverupert.com/2016/04/jekyll-on-windows-with-bash/) on Bash on Ubuntu on Windows.
   
-  3. Browse to your site at [http://localhost:4000](http://localhost:4000). *(Optionally: Jump for Joy!)*
+3. Browse to your site at [http://localhost:4000](http://localhost:4000). *(Optionally: Jump for Joy!)*
   
-  4. If you run into errors when trying to `jekyll serve` locally, try one or more of the following:
-  
-     - If the error message includes the text `Failed to watch` and/or mentions something called `inotify`, you are likely suffering from the bug described at the top of the above guide. Try running either:
-          - `jekyll serve --no-watch` or
-          - `jekyll serve --force_polling`
-     - For error messages which mention `bundler`, try running `bundle exec jekyll serve` (optionally with one of the flags above).
-  
-  5. That's the *minimum* necessary. If you want to use any Ruby gems (for plugins or other additional functionality), you'll likely have to install other packages as well.
+That's the *minimum* necessary. If you want to use any Ruby gems (for plugins or other additional functionality), you'll likely have to install other packages as well.
      If you get errors when trying to `gem install` anything, check [Dave's guide to install Ruby](http://daverupert.com/2016/06/ruby-on-rails-on-bash-on-ubuntu-on-windows/) to see how to install some
      dependencies that you might be missing (typically the XML libs for Nokogiri).
      
-  6. If you want, you can install the `github-pages` gem, to ensure that your local build environment matches GitHub's. The best way seems to be:
-     - Install the Bundler package manager: `sudo gem install bundler`
-     - Create (or edit) a `Gemfile` in your project directory and add the the following lines to it:
-         ~~~~~~~~~~
-         source 'https://rubygems.org'
-         gem 'github-pages'
-         ~~~~~~~~~~~~
-     - Inside the directory containing the above Gemfile, run `sudo bundle install`.
-     
-  7. If you notice lots of 404's and/or lack of styling in your built site (whether before or after deploying to GitHub), be sure
-     to read [Configuring Jekyll for User and Project GitHub Pages](http://downtothewire.io/2015/08/15/configuring-jekyll-for-user-and-project-github-pages/).
-     It describes the correct way to set up your `_config.yml` and theme templates so that your site just **works**, whether locally or hosted, whether it's a GitHub user page or project page.
+Also, if you want, you can install the `github-pages` gem, to ensure that your local build environment matches GitHub's. The best way seems to be:
 
+  - Install the Bundler package manager: `sudo gem install bundler`
+  - Create (or edit) a `Gemfile` in your project directory and add the the following lines to it:
+    ~~~~~~~~~~
+      source 'https://rubygems.org'
+      gem 'github-pages'
+    ~~~~~~~~~~~~
+  - Inside the directory containing the above Gemfile, run `sudo bundle install`.
+     
+
+## Not working?
+
+You might encounter some errors along the way, either when trying to build/serve your Jekyll site locally, or in the site itself after it's built. If so, here are some things to try:
+
+1. If you run into errors when trying to `jekyll serve` locally, try one or more of the following:
+  
+    - If the error message includes the text `Failed to watch` and/or mentions something called `inotify`, you are likely suffering from the bug described in Dave's guide to installing Jekyll. Try running either:
+      - `jekyll serve --no-watch` or
+      - `jekyll serve -w --force_polling`
+    - For error messages which mention `bundler`, try running `bundle exec jekyll serve` (optionally with any of the flags above).
+  
+2. If you notice lots of 404's and/or lack of styling in your built site (whether locally or after deploying to GitHub), be sure
+   to read [Configuring Jekyll for User and Project GitHub Pages](http://downtothewire.io/2015/08/15/configuring-jekyll-for-user-and-project-github-pages/).
+   It describes the correct way to set up your `_config.yml` and theme templates so that your site just *works*, whether locally or hosted, whether it's a GitHub user page or project page.
 
 ## Continuing the journey
 
@@ -85,3 +90,8 @@ I hope the guide was useful -- let me know! Also, check out the following additi
   - [Add Teaser and Read-more Functionality](http://www.seanbuscay.com/blog/jekyll-teaser-pager-and-read-more/) to your templates.
   
   - [Add Reading Time to a post](https://medium.com/@r3id/jekyll-tips-tricks-315dd45eab0c)
+  
+  
+Thanks for reading! :)
+
+■

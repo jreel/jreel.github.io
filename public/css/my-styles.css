@@ -9,3 +9,10 @@
 .small {
     font-size: 0.8em;
 }
+
+ul.related-posts {
+    list-style-type: none;
+}
+.related-posts li:before {
+    content: "\25B8 \0020";
+}
