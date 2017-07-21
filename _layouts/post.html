@@ -11,7 +11,7 @@ comments: true
 
   <div class="post-footer">
     {% if page.comments %}
-    {% if site.disqus %}
+    {% if site.disqus.shortname %}
       <a href="{{ page.url | prepend: site.baseurl }}index.html#disqus_thread" data-disqus-identifier="{{ page.url }}"></a>
     {% endif %}
     {% endif %}
