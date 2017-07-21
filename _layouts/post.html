@@ -20,10 +20,8 @@ comments: true
       &bull; written by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
       {% endif %}
 
-      {% if page.comments %}
-      {% if site.disqus.shortname %}
-      &bull; <span class="disqus-comment-count" data-disqus-identifier="{{ page.url | relative_url }}"></span>
-      {% endif %}
+      {% if page.comments == true and site.disqus.shortname %}
+      &bull; <a class="disqus-comment-count" href="{{ page.url | absolute_url }}#disqus_thread" data-disqus-identifier="{{ page.url | absolute_url }}"></a>
       {% endif %}
     </div>
 
@@ -52,6 +50,6 @@ comments: true
 
 </article>
 
-{% if site.disqus.shortname %}
+{% if page.comments == true and site.disqus.shortname %}
 {% include disqus.html %}
 {% endif %}

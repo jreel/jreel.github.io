@@ -9,6 +9,6 @@ layout: default
 
 </article>
 
-{% if site.disqus.shortname %}
+{% if page.comments == true and site.disqus.shortname %}
 {% include disqus.html %}
 {% endif %}
