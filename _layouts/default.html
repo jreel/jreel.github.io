@@ -27,7 +27,7 @@
       </div>
     </main>
 
-  {% if site.disqus.shortname %}
+  {% if page.comments == true and site.disqus.shortname %}
     <!-- Disqus comments count -->
     <script id="dsq-count-scr" src="//{{ site.disqus.shortname }}.disqus.com/count.js" async></script>
   {% endif %}
