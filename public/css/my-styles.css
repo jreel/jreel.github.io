@@ -16,3 +16,44 @@ ul.related-posts {
 .related-posts li:before {
     content: "\25B8 \0020";
 }
+pre, code {
+    font-family: Consolas, Monaco, 'Andale Mono', monospace;
+    font-size: 0.95em;
+    white-space: pre;
+    word-spacing: normal;
+    color: #333333;
+}
+pre {
+    white-space: pre;
+    word-break: keep-all;
+    word-wrap: normal;
+    overflow-x: auto;
+    overflow-y: auto;
+    padding: 0.5rem;
+    font-size: 0.75rem;
+}
+code {
+    margin: 0 .25em;
+    padding: .25em .25em;
+    font-size: 80%;
+}
+body, article, div, p {
+    line-height: 1.55;
+}
+h2, h3, h4 {
+    padding: 1.5em 0 .5em;
+}
+h2, h3 {
+    line-height: 1.3;
+}
+h4 {
+    letter-spacing: 0.125em;
+    font-family: 'Segoe UI', "Droid Sans", Roboto, Arial, sans-serif;
+    text-transform: uppercase;
+}
+ul {
+    padding-left: 1em;
+}
+li {
+    padding-left: 1em;
+}
