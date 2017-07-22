@@ -3,7 +3,7 @@ layout: post
 title: Setting Up Disqus Comments on Jekyll
 ---
 Part of an ongoing-as-I-discover-them series featuring a collection of tips, tricks, etc. for Jekyll websites.
-In today's episode we Disqus comments. *(Haha, get it? ~~Discuss~~Disqus comments? I'll show myself out...)*
+In today's episode we discuss Disqus.
 <!--more-->
 
 {% include jekyll-shpiel.html %}

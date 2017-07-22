@@ -27,8 +27,16 @@ comments: true
 
   </header>
 
+  {% assign content_array = page.content | split: site.excerpt_separator %}
+  {% assign excerpt_only = content_array | first %}
+  {% assign content_remainder = content_array | last %}
+
+  <div class="intro excerpt">
+    {{ excerpt_only | append: '</p>'}}
+  </div>
+
   <div class="post-content" itemprop="articleBody">
-    {{ content | replace: site.excerpt_separator, '<a class="anchor" id="read-more"></a>' }}
+    {{ content_remainder | remove_first: '</p>'}}
   </div>
 
   <div class="post-footer">

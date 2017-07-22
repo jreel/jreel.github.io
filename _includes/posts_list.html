@@ -20,8 +20,8 @@
             {{ post.excerpt | number_of_words }}
         {% endcapture %}
         {% if excerpt_words != content_words %}
-        <span> ... <a class="" href="{{ post.url | prepend: site.baseurl }}">more &raquo;</a>
-        </span>
+        <p class="more-link"> ... <a href="{{ post.url | prepend: site.baseurl }}">read more &raquo;</a>
+        </p>
         {% endif %}
     </li>
         {% endif %}
