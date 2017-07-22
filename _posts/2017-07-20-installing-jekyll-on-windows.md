@@ -45,7 +45,9 @@ If you've been paying attention to trends in web development over the past few y
      
 2. Follow [Dave Ruper's guide to install Jekyll](http://daverupert.com/2016/04/jekyll-on-windows-with-bash/) on Bash on Ubuntu on Windows.
 
-3. From within your Jekyll project directory, run `jekyll serve`. Browse to your site at [http://localhost:4000](http://localhost:4000). Jump for joy. *(Jumping in rage instead? See "Not working?" below.)*
+3. From within your Jekyll project directory, run `jekyll serve`. Browse to your site at [http://localhost:4000](http://localhost:4000). Jump for joy.
+
+   *(Jumping in rage instead? Consult the "Not working?" section below.)*
   
 That's the *minimum* necessary. If you want to use any Ruby gems (for plugins or other additional functionality), you'll likely have to install other packages as well.
      If you get errors when trying to `gem install` anything, check [Dave's guide to install Ruby](http://daverupert.com/2016/06/ruby-on-rails-on-bash-on-ubuntu-on-windows/) to see how to install some

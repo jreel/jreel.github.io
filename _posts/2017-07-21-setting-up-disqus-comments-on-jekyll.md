@@ -88,12 +88,14 @@ and here's the steps I followed to get Disqus comments on my posts.
      
      
 6. Finally, go to your Admin panel on the Disqus site and double-check the Settings for your site. You may need to tweak some things in order
-   to get it working, and unfortunately, it may take some time for the changes to propagate. *In particular,* if you're hosting a GitHub User page 
-   (with a domain of the format `http://YOU.github.io`), you might need to change your **Website URL** in the Disqus Settings to:
+   to get it working, and unfortunately, it may take some time for the changes to propagate.
+   
+   *In particular,* if you're hosting a GitHub User page, with a domain of the format `http://YOU.github.io`, 
+   you might need to change your Website URL in the Disqus Settings to:
    ~~~~~~
      http://YOU.github.io/YOU.github.io
    ~~~~~~
-   ... since that is the actual name of the repository; GitHub just redirects.
+   ... since that is the actual name of the subfolder your website is in (GitHub just redirects to the subdomain, from what I understand).
    
    Also note that **you won't be able to see comments when developing locally** -- you need to `git push` and wait for your site to build on GitHub.
    (And also possibly wait for Disqus to update with any changes you've made.)

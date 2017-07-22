@@ -12,6 +12,10 @@
 
 ul.related-posts {
     list-style-type: none;
+    padding-left: 0;
+}
+ul.related-posts li {
+    padding-left: 0;
 }
 .related-posts li:before {
     content: "\25B8 \0020";
@@ -41,7 +45,7 @@ body, article, div, p {
     line-height: 1.55;
 }
 h2, h3, h4 {
-    padding: 1.5em 0 .5em;
+    padding: 0.75em 0 0;
 }
 h2, h3 {
     line-height: 1.3;
@@ -51,9 +55,56 @@ h4 {
     font-family: 'Segoe UI', "Droid Sans", Roboto, Arial, sans-serif;
     text-transform: uppercase;
 }
-ul {
+ul, ol, ol li {
     padding-left: 1em;
 }
+ul li {
+    padding-left: 0.5em;
+}
 li {
-    padding-left: 1em;
+    margin-bottom: 0.5em;
+}
+h2 {
+    border-bottom: 1px solid #eeeeee;
+}
+li ul li, li ol li {
+    margin-top: 0.5em;
+}
+ol {
+    counter-reset: li;
+    margin-left: 0;
+    padding-left: 0;
+}
+ol > li {
+    position: relative;
+    margin: 0 0 0 1.75em;
+    padding: 0 0 0 1.5em;
+    list-style: none;
+    border-left: 8px solid #cccccc;
+}
+ol > li + li {
+    margin-top: 2em;
+}
+ol > li:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    top: 0;
+    left: -2em;
+    box-sizing: border-box;
+    width: 2em;
+    margin: 0;
+    padding: 4px;
+    color: #fff;
+    background: #555566;
+    font-weight: bold;
+    font-family: 'Segoe UI', "Droid Sans", Roboto, Arial, sans-serif;
+    text-align: center;
+}
+li ol, li ul {
+    margin-top: 0.75em;
+    margin-left: 0.5em;
+}
+ol ol li:last-child {
+    margin-bottom: 0;
 }
