@@ -2,7 +2,7 @@
 layout: post
 title: "Some articles are just so long they deserve a really long title to see if things will break well"
 categories: misc
-test: true
+draft: true
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. <!--more-->
