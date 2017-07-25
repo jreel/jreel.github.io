@@ -128,3 +128,8 @@ p.more-link {
 * {
     word-spacing: 1px;
 }
+abbr, abbr[title], acronym, acronym[title] {
+    text-decoration: none;
+    border-bottom: 1px dotted #cecece;
+    cursor: help;
+}

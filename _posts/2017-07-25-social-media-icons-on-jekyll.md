@@ -77,10 +77,10 @@ Given that you've created some data using the above format, you can loop through
 <div id="social-media">
     {% assign sm = site.data.social-media %}
     {% for entry in sm %}
-    {% assign key = entry | first %}
+        {% assign key = entry | first %}
         {% if sm[key].id %}
             <a href="{{ sm[key].href }}{{ sm[key].id }}" title="{{ sm[key].title }}"><i class="fa {{ sm[key].fa-icon }}"></i></a>
-    {% endif %}
+        {% endif %}
     {% endfor %}
 </div>
 {% endif %}
