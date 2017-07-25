@@ -8,7 +8,7 @@ layout: null
         <description>{{ site.description }}</description>
         <link>{{ site.url }}</link>
         {% for post in site.posts %}
-        {% unless post.draft %}
+        {% if post.published %}
             {% if site.excerpt_separator and post.content contains site.excerpt_separator %}
                 {% assign post_excerpt = post.content | split: site.excerpt_separator | first | strip_html %}
             {% elsif post.description %}
@@ -23,7 +23,7 @@ layout: null
             <link>{{ post.url | prepend: site.url }}</link>
             <guid isPermaLink="true">{{ post.url | prepend: site.url }}</guid>
         </item>
-        {% endunless %}
+        {% endif %}
         {% endfor %}
     </channel>
 </rss>

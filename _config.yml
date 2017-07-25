@@ -81,6 +81,7 @@ defaults:
     values:
       layout: "post"
       comments: true   # change to false to default to comments off site-wide
+      published: true  # default to published
 
 
 #Collections

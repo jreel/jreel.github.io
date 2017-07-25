@@ -57,6 +57,7 @@ Set the meta-description from the post.excerpt
 [Fun Jekyll tricks](http://www.madebymarket.com/blog/dev/fun-jekyll-tricks.html):
  Rakefiles, _posts subfolders as categories, the _data folder, the _includes folder
 
+[Set up Jekyll RSS feed](https://learn.cloudcannon.com/jekyll/rss-feed/)
 
 ## WebStorm Tips and Reference
 

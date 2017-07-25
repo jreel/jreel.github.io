@@ -1,7 +1,7 @@
 ---
 layout: post
 title: An Interesting Article
-draft: true
+published: false
 ---
 
 This is an interesting article that you should absolutely read.
