@@ -97,8 +97,19 @@ And it renders like so: <a href="https://www.facebook.com/thereeljess" title="Fa
 
 ## Usage notes
 - Include the output on your site via the `{% raw %}{% include social-media-links.html %}{% endraw %}` tag.
+
 - Note that because the above code checks that the `id` exists, you can opt to leave some entries blank in the data file to fill in later, or create a theme, or whatever.
+
 - The class `fa-icon` requires the [FontAwesome](http://fontawesome.io/) stylesheet to be included on your site.
+
+- Now that you've defined everything once already, you can easily add a link to (for example) your email address on any other page:
+  ~~~~~ html
+  {% raw %}
+  <a href="{{ site.data.social-media.email.href }}{{ site.data.social-media.email.id }}" title="Email me">Click here to send me an email!</a>
+  {% endraw %}
+  ~~~~~
+
+  (This becomes even better when you realize that if you do things this way, you only have to replace a single entry in the data file if your email address ever changes!)
 
 I hope that this gives you other ideas on how to use Jekyll data to improve your own website -- share your ideas in the comments below. Thanks for reading! :)
 

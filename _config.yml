@@ -45,10 +45,7 @@ url:  # pretty sure this is auto-set during build, so I'd leave it alone if I we
 
 
 
-# # # # Social, feed, API, etc. settings # # # #
-# Feed settings
-atom_feed:
-  path:  # blank (default) uses feed.xml
+# # # # Social, API, etc. settings # # # #
 
 # Disqus settings for comments
 disqus:
@@ -108,14 +105,6 @@ highlighter:  rouge
 theme: # minima for new installs. leave blank if using custom theme / developing locally
 lsi:  true  # produces an index for related posts, requires classifier-reborn plugin
 incremental: false
-
-# Plugins (previously gems:)
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
