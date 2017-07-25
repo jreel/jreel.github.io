@@ -19,7 +19,7 @@ My recent adventures have involved setting up my personal GitHub page and
  Now that that's mostly sorted, we're moving on to the front-end stuff.
  
 ## The blessing and curse of Jekyll
-Jekyll can be a bit two-faced *(much like its literary ~~namesake~~ eponym, methinks)*, in that one of the biggest benefits to Jekyll is also a huge drawback,
+Jekyll can be a bit two-faced *(much like its literary ~~namesake~~ eponym)*, in that one of the biggest benefits to Jekyll is also a huge drawback,
 and that is the fact that it's so blank... open... unfettered... there are a multitude of different ways to configure and use it!
 
 Which means there are a multitude of different problems that can happen, and a multitude of different solutions, and it can be
@@ -35,6 +35,9 @@ Without further ado...
 Since Jekyll serves up static webpages, one must use third-party services for any dynamic content such as user comments. Disqus is one such service,
 and [here's the steps I followed to get Disqus comments on my posts]({{ site.baseurl }}{% post_url 2017-07-21-setting-up-disqus-comments-on-jekyll %}).
 
+### Using _data for things like social media
+Following the 'DRY' development principle, it makes the most sense to define anything -- especially a collection of data -- only once, and utilize a `for` loop to display it as needed. This works really well for [including a series of linked social media icons on your Jekyll site]({{ site.baseurl }}{% post_url 2017-07-25-social-media-icons-on-jekyll %}).
+
 
 
 ## That's all for now...
@@ -44,3 +47,5 @@ Check back later -- I plan to add to this list as I find more useful tidbits.
 Do you have a tip or trick you'd like to share? Leave your advice for your fellow Jekyll users in the comments below! :)
 
 ■
+
+*[DRY]: Don't Repeat Yourself
