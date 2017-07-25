@@ -86,17 +86,26 @@ defaults:
       comments: true   # change to false to default to comments off site-wide
 
 
+#Collections
+collections:
+  pages:
+    output: true
+    permalink: /:path
+
+
 # Filtering
-show_drafts:  null
 limit_posts:  0
+show_drafts:  false
 future:  false
 unpublished:  false
 
 # Conversion
 markdown: kramdown
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+kramdown:
+  input: GFM # enable github-flavored markdown
 highlighter:  rouge
-theme: # minima for new installs. leave blank when developing locally
+theme: # minima for new installs. leave blank if using custom theme / developing locally
 lsi:  true  # produces an index for related posts, requires classifier-reborn plugin
 incremental: false
 
@@ -122,6 +131,8 @@ plugins:
 include:
   - .htaccess
   - _pages
+  - _articles
+  - _data
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"

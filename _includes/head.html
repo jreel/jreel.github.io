@@ -4,7 +4,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
-  <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
   <title>
@@ -15,7 +14,49 @@
     {% endif %}
   </title>
 
-  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  {% comment %}
+    ## The code below sets up the page excerpt and
+    ##  the meta description.
+    ##
+    ## On the home page, the meta description is simply
+    ##  set to the site.description (defined in config.yml).
+    ##
+    ## On other pages/posts/whatever:
+    ##
+    ## If an excerpt_separator is defined in the config.yml
+    ##  and the page content contains it, the page_excerpt is
+    ##  set to the content before the excerpt_separator.
+    ## Otherwise, the page excerpt is set to the first 75 words
+    ##  of the page content.
+    ##
+    ## The page_description is set to the page description
+    ##  (defined in the front matter) if it exists, and defaults
+    ##  to the newly-defined page_excerpt if no description is set.
+    ##
+    ## The meta description then is set to the page_description
+    ##  if it exists, which will be, in order:
+    ##    - page.description,
+    ##    - page_excerpt, or
+    ##    - site.description
+    ##
+  {% endcomment %}
+
+  {% if page.layout == 'home' or page.title == 'Home' %}
+
+    {% assign page_description = site.description %}
+
+  {% else %}
+
+    {% if site.excerpt_separator and page.content contains site.excerpt_separator %}
+      {% assign page_excerpt = page.content | split: site.excerpt_separator | first %}
+    {% else %}
+      {% assign page_excerpt = page.content | truncatewords: 75 %}
+    {% endif %}
+    {% assign page_description = page.description | default: page_excerpt %}
+
+  {% endif %}
+
+  <meta name="description" content="{{ page_description | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 
@@ -37,7 +78,7 @@
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }} RSS" href="{{ '/feed.xml' | relative_url }}">
 
-  <!-- Google analytics -->
+  <!-- Google analytics (set in config) -->
   {% if jekyll.environment == 'production' and site.google_analytics %}
   {% include google-analytics.html %}
   {% endif %}

@@ -27,16 +27,20 @@ comments: true
 
   </header>
 
-  {% assign content_array = page.content | split: site.excerpt_separator %}
-  {% assign excerpt_only = content_array | first %}
-  {% assign content_remainder = content_array | last %}
+  {% assign page_content = page.content %}
+  {% if page.description %}
+    {% assign page_excerpt = page.description %}
+  {% elsif site.excerpt_separator and page.content contains site.excerpt_separator %}
+    {% assign page_excerpt = page.content | split: site.excerpt_separator | first %}
+    {% assign page_content = page.content | split: site.excerpt_separator | last %}
+  {% endif %}
 
   <div class="intro excerpt">
-    {{ excerpt_only | append: '</p>'}}
+    {{ page_excerpt }}
   </div>
 
   <div class="post-content" itemprop="articleBody">
-    {{ content_remainder | remove_first: '</p>'}}
+    {{ page_content }}
   </div>
 
   <div class="post-footer">

@@ -10,7 +10,7 @@
     </div>
 
     <nav class="sidebar-nav">
-      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>
+      <a class="sidebar-nav-item{% if page.url == site.url %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>
 
       {% comment %}
         The code below dynamically generates a sidebar nav of pages with
@@ -26,55 +26,10 @@
 
     </nav>
 
-    <div id="social-media">
-      {% if site.footer-links.email %}
-      <a href="mailto:{{ site.footer-links.email }}" title="Email us"><i
-              class="fa fa-envelope-square"></i></a>
-      {% endif %}
-      {% if site.footer-links.facebook %}
-      <a href="https://www.facebook.com/{{ site.footer-links.facebook }}" title="Facebook"><i
-              class="fa fa-facebook-square"></i></a>
-      {% endif %}
-      {% if site.footer-links.twitter %}
-      <a href="https://www.twitter.com/{{ site.footer-links.twitter }}" title="Twitter"><i
-              class="fa fa-twitter-square"></i></a>
-      {% endif %}
-      {% if site.footer-links.googleplus %}
-      <a href="https://plus.google.com/{{ site.footer-links.googleplus }}" title="Google+"><i
-              class="fa fa-google-plus-square"></i></a>
-      {% endif %}
-      {% if site.footer-links.github %}
-      <a href="https://github.com/{{ site.footer-links.github }}" title="GitHub"><i
-              class="fa fa-github-square"></i></a>
-      {% endif %}
-      {% if site.footer-links.linkedin %}
-      <a href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}" title="LinkedIn"><i
-              class="fa fa-linkedin-square"></i></a>
-      {% endif %}
-      {% if site.footer-links.instagram %}
-      <a href="https://instagram.com/{{ site.footer-links.instagram }}" title="Instagram"><i
-              class="fa fa-instagram"></i></a>
-      {% endif %}
-      {% if site.footer-links.stackoverflow %}
-      <a href="http://stackoverflow.com/{{ site.footer-links.stackoverflow }}" title="StackOverflow"><i
-              class="fa fa-stack-overflow"></i></a>
-      {% endif %}
-      {% if site.footer-links.youtube %}
-      <a href="https://youtube.com/{{ site.footer-links.youtube }}" title="YouTube"><i
-              class="fa fa-youtube"></i></a>
-      {% endif %}
-      {% if site.footer-links.rss %}
-      <a href="/feed.xml" title="RSS"><i
-              class="fa fa-rss-square"></i></a>
-      {% endif %}
-    </div>
+   {% include social-media-links.html %}
 
 
     <p class="small">&copy; {{ site.time | date: '%Y' }}
-      {% if site.name %}
-      {% if site.email %}<a href="mailto:{{ site.email }}">{% endif %}
-      {{ site.name }}
-      {% if site.email %}</a>{% endif %}
-      {% endif %}. All rights reserved.</p>
+      {% if site.name %}{% if site.email %}<a href="mailto:{{ site.email }}">{% endif %}{{ site.name }}{% if site.email %}</a>{% endif %}{% endif %}. All rights reserved.</p>
   </div>
 </div>

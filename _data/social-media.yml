@@ -1,0 +1,60 @@
+email:
+  id: 'jessica.reel@outlook.com'
+  href: 'mailto:'
+  title: 'Email'
+  fa-icon: 'fa-envelope-square'
+
+facebook:
+  id:
+  href: 'https://www.facebook.com/'
+  title: 'Facebook'
+  fa-icon: 'fa-facebook-square'
+
+twitter:
+  id:
+  href: 'https://www.twitter.com/'
+  title: 'Twitter'
+  fa-icon: 'fa-twitter-square'
+
+googleplus:
+  id:
+  href: 'https://plus.google.com/'
+  title: 'Google+'
+  fa-icon: 'fa-google-plus-square'
+
+github:
+  id: 'jreel'
+  href: 'https://github.com/'
+  title: 'GitHub'
+  fa-icon: 'fa-github-square'
+
+linkedin:
+  id: 'thereeljess'
+  href: 'https://www.linkedin.com/in/'
+  title: 'LinkedIn'
+  fa-icon: 'fa-linkedin-square'
+
+instagram:
+  id:
+  href: 'https://instagram.com/'
+  title: 'Instagram'
+  fa-icon: 'fa-instagram'
+
+stackoverflow:
+  id:
+  href: 'http://stackoverflow.com/'
+  title: 'StackOverflow'
+  fa-icon: 'fa-stack-overflow'
+
+youtube:
+  id:
+  href: 'https://youtube.com/'
+  title: 'YouTube'
+  fa-icon: 'fa-youtube'
+
+rss:
+  id: '/feed.xml'
+  href:
+  title: 'RSS'
+  fa-icon: 'fa-rss-square'
+
