@@ -98,7 +98,7 @@ And it renders like so: <a href="https://www.facebook.com/thereeljess" title="Fa
 ## Usage notes
 - Include the output on your site via the `{% raw %}{% include social-media-links.html %}{% endraw %}` tag.
 
-- Note that because the above code checks that the `id` exists, you can opt to leave some entries blank in the data file to fill in later, or create a theme, or whatever.
+- Note that because the above code checks that the `id` exists, you can opt to leave some entries blank in the data file to fill in later, or create a theme and let the end user fill it in, or whatever.
 
 - The class `fa-icon` requires the [FontAwesome](http://fontawesome.io/) stylesheet to be included on your site.
 
