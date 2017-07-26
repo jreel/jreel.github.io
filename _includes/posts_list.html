@@ -1,6 +1,7 @@
 <div class="posts">
     <ul class="post-list">
     {% for post in paginator.posts %}
+        <!-- {{ post.title }} .published = {{ post.published }} -->
         {% if jekyll.environment == "development" or post.published == "true" %}
     <li class="post">
         <h1 class="post-title">
