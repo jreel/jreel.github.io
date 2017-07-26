@@ -59,6 +59,9 @@ Set the meta-description from the post.excerpt
 
 [Set up Jekyll RSS feed](https://learn.cloudcannon.com/jekyll/rss-feed/)
 
+[Page-specific assets with Jekyll](http://mattgemmell.com/page-specific-assets-with-jekyll/)
+
+
 ## WebStorm Tips and Reference
 
 [Using WebStorm to Maintain a Jekyll Site](http://hadihariri.com/2014/01/04/using-webstorm-to-maintain-a-jekyll-site/): 
