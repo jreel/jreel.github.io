@@ -9,19 +9,19 @@ Part of an ongoing series featuring a collection of tips, tricks, etc. for Jekyl
 
 ## Social media icons, the repetitive (wrong) way
 I've seen at least one Jekyll theme that displays social media icons by asking the user to
-edit their social media information in _config.yml, and then it checks each.and.every.key via separate `if` statements. For instance:
+define their social media handles in _config.yml, and then it checks each.and.every.one via separate `if` statements. For instance:
 
 ~~~~~ html
 {% raw %}
 <div id="socialMedia">
-{% if site.footer-links.email %}
-    <a href="mailto:{{ site.footer-links.email }}" title="Email"><i class="fa fa-envelope-square"></i></a>
+{% if site.social-media.email %}
+    <a href="mailto:{{ site.social-media.email }}" title="Email"><i class="fa fa-envelope-square"></i></a>
 {% endif %}
-{% if site.footer-links.facebook %}
-    <a href="https://www.facebook.com/{{ site.footer-links.facebook }}" title="Facebook"><i class="fa fa-facebook-square"></i></a>
+{% if site.social-media.facebook %}
+    <a href="https://www.facebook.com/{{ site.social-media.facebook }}" title="Facebook"><i class="fa fa-facebook-square"></i></a>
 {% endif %}
-{% if site.footer-links.twitter %}
-    <a href="https://www.twitter.com/{{ site.footer-links.twitter }}" title="Twitter"><i class="fa fa-twitter-square"></i></a>
+{% if site.social-media.twitter %}
+    <a href="https://www.twitter.com/{{ site.social-media.twitter }}" title="Twitter"><i class="fa fa-twitter-square"></i></a>
 {% endif %}
 .
 .

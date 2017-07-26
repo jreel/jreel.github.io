@@ -31,6 +31,6 @@
 
 
     <p class="small">&copy; {{ site.time | date: '%Y' }}
-      {% if site.name %}{% if site.email %}<a href="mailto:{{ site.email }}">{% endif %}{{ site.name }}{% if site.email %}</a>{% endif %}{% endif %}. All rights reserved.</p>
+      {% assign site_name = site.name | default: site.title | append: '.' %}{% include email.html inner=site_name %}  All rights reserved.</p>
   </div>
 </div>
