@@ -3,6 +3,7 @@ _docs
 _gh_pages
 _site
 _no-include
+_original_posts_for_reference
 
 # extensions
 *.gem
@@ -18,6 +19,7 @@ _no-include
 *~
 
 # OS or editor folders
+.gitignore
 .DS_Store
 ._*
 Thumbs.db
