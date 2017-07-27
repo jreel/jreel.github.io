@@ -36,7 +36,7 @@ Lifelong hobbyist **programmer**. Advanced degree in **science** with several ye
 ## Education
 ### Master of Science, Organic Chemistry, 2013–2016.   *[Duke University][Duke], Durham, NC*
 - Concentration in physical organic and organometallic chemistry
-- [National Science Foundation Graduate Research Fellow][NSF-me]
+- [National Science Foundation Graduate Research Fellow][NSF]
 - Mentored by Professor [Ross A. Widenhoefer][widenhoefer]
 - Thesis title: "A comparative review of computational methods as applied to gold(I) complexes and mechanisms" ([pdf][thesis])
 - Graduate coursework in organic reactions, organometallic chemistry, physical organic chemistry, NMR, biomolecular interactions, and modeling complex materials.
