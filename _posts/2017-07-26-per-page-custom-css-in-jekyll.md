@@ -64,5 +64,5 @@ Now, in that same file with the &lt;HEAD&gt; section, insert the following (agai
 As before: adjust the path in the `src`, make your files, and you're good to go!
 
 
-That's it! It's really one of the easiest, and most useful, Jekyll hacks I've found to date. Thanks to the original blog author (linked above), and thank *you* for reading! :)
+That's it! It's really one of the easiest, and most useful, Jekyll hacks I've found to date. Thanks to the original blog author [Matt Gemmell](http://mattgemmell.com/page-specific-assets-with-jekyll/), and thank *you* for reading! :)
 ■
