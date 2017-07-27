@@ -45,8 +45,8 @@ Lifelong hobbyist **programmer**. Advanced degree in **science** with several ye
 ### Bachelor of Science, Chemistry, 2008–2011.  *[University of South Carolina Aiken][USCA], Aiken, SC*
 - Biology minor (courses in Biochemistry, Molecular Biology, Microbiology, Cancer Biology)
 - Thesis title: "Continued Investigations into the [Solvatochromism][wiki-Solvato] of Methylene Violet".
-- Scored at or above 90th percentile nationally on American Chemical Society standardized exams for General, Organic, Analytical, Physical, and Inorganic Chemistry.
-- GPA: 3.9/4.0 *(magna cum laude)*
+- Scored above the 90th percentile nationally on American Chemical Society standardized exams for General, Organic, Analytical, Physical, and Inorganic Chemistry.
+- Graduated *magna cum laude*
 
 ### Associate of Science, Computer Technology, 2001–2003.  *Aiken Technical College, Aiken, SC*
 
