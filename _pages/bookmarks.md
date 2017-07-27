@@ -84,6 +84,12 @@ How to clone a GitHub project into WebStorm, how to use Apache Velocity to set u
 
 [Git notes](https://github.com/stylekit/research/wiki/Git-notes): GitHub wiki with notes on Git commands and usage.
 
+[Git Tips](https://github.com/git-tips/tips)
+
+[Git Best Practices](https://sethrobertson.github.io/GitBestPractices/)
+
+[Using GitHub to Maintain a To-Do List](http://lifehacker.com/why-a-github-gist-is-my-favorite-to-do-list-1493063613): With Checkboxes!
+
 
 ## Style Guides and Best Practices
 
