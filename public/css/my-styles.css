@@ -132,6 +132,6 @@ abbr, abbr[title], acronym, acronym[title] {
     text-decoration: none;
     border-bottom: 1px dotted #cecece;
     cursor: help;
-    font-weight: normal;
+    font-weight: inherit;
     font-size: inherit;
 }
