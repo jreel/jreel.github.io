@@ -34,6 +34,8 @@ Written as part of a user guide for the Minecraft Bukkit plugin, but still a goo
 
 [How I Added Teaser and Read-more Functionality to My Jekyll Blog](http://www.seanbuscay.com/blog/jekyll-teaser-pager-and-read-more/)
 
+[Add Reading Time to a post](https://medium.com/@r3id/jekyll-tips-tricks-315dd45eab0c)
+
 [Create Post Excerpt Intelligently in Jekyll](http://theunixtips.com/create-post-excerpt-intelligently-in-jekyll/): 
 Set the meta-description from the post.excerpt
 

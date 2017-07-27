@@ -47,7 +47,7 @@ If you've been paying attention to trends in web development over the past few y
 
 3. From within your Jekyll project directory, run `jekyll serve`. Browse to your site at [http://localhost:4000](http://localhost:4000). Jump for joy.
 
-   *(Jumping in rage instead? Consult the "Not working?" section below.)*
+   *(Jumping in rage instead? Consult the "It's Not Working!" section below.)*
   
 That's the *minimum* necessary. If you want to use any Ruby gems (for plugins or other additional functionality), you'll likely have to install other packages as well.
      If you get errors when trying to `gem install` anything, check [Dave's guide to install Ruby](http://daverupert.com/2016/06/ruby-on-rails-on-bash-on-ubuntu-on-windows/) to see how to install some
@@ -64,7 +64,7 @@ Also, if you want, you can install the `github-pages` gem, to ensure that your l
   - Inside the directory containing the above Gemfile, run `sudo bundle install`.
      
 
-## Not working?
+## It's Not Working!
 
 You might encounter some errors along the way, either when trying to build/serve your Jekyll site locally, or in the site itself after it's built. If so, here are some things to try:
 
@@ -88,10 +88,10 @@ I hope the guide was useful -- let me know! Also, check out the following additi
   - [Jekyll and GitHub tips for designers](https://michellehertzfeld.com/thoughts/using-jekyll-and-github-tips-for-designers/) -- Another "beginner" guide to Jekyll + GitHub
   
   - [Jekyll for GitHub setup on MacOS](https://www.taniarascia.com/make-a-static-website-with-jekyll/) in case you need it
-      
-  - [Add Teaser and Read-more Functionality](http://www.seanbuscay.com/blog/jekyll-teaser-pager-and-read-more/) to your templates.
-  
-  - [Add Reading Time to a post](https://medium.com/@r3id/jekyll-tips-tricks-315dd45eab0c)
+
+  - My own ongoing journey to discover and implement [Jekyll tips, tricks, and best practices]({{ site.baseurl }}{% post_url 2017-07-21-jekyll-tips-tricks-and-best-practices %})
+
+  - My collection of Jekyll-related [Bookmarks]({{ site.baseurl }}{% link _pages/bookmarks.md %})
   
   
 Thanks for reading! :)
