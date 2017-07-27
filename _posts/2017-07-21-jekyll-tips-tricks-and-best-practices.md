@@ -38,11 +38,15 @@ and [here's the steps I followed to get Disqus comments on my posts]({{ site.bas
 ### Using _data for things like social media
 Following the 'DRY' development principle, it makes the most sense to define anything -- especially a collection of data -- only once, and utilize a `for` loop to display it as needed. This works really well for [including a series of linked social media icons on your Jekyll site]({{ site.baseurl }}{% post_url 2017-07-25-social-media-icons-on-jekyll %}).
 
+### Setting per-post (or per-page) custom CSS
+Helps you [manage your CSS styles]({{ site.baseurl }}{% post_url 2017-07-26-per-page-custom-css-in-jekyll %}) (and JS files) so that only the posts that need'em, get'em.
 
 
 ## That's all for now...
 
 Check back later -- I plan to add to this list as I find more useful tidbits.
+
+Also check out my collection of [Bookmarks]({{ site.baseurl }}{% link _pages/bookmarks.md %}) for more valuable resources!
 
 Do you have a tip or trick you'd like to share? Leave your advice for your fellow Jekyll users in the comments below! :)
 
