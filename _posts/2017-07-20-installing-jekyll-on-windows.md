@@ -105,10 +105,9 @@ As Dave points out in [his guide](http://daverupert.com/2016/04/jekyll-on-window
 
 2. Once those are set up, we can install Ruby:
    ~~~~~
-   $ apt install ruby-full
-   $ apt install ruby-all-dev
+   $ apt install ruby-full ruby-all-dev build-essential
+   $ gem update
    ~~~~~
-   *Note that it seems I didn't need to do anything additional for the "RubyGems" requirement listed in the official docs.*
 
 3. Jekyll also seems to require a "JavaScript runtime", which Node.js *(ha!)* satisfies just fine:
    ~~~~~
@@ -128,7 +127,7 @@ As Dave points out in [his guide](http://daverupert.com/2016/04/jekyll-on-window
    $ gem install jekyll
    ~~~~~
 
-2. To make a new (default) Jekyll project, `cd` into the desired directory and run:
+2. To make a new (default) Jekyll project, `cd` into the directory you want to house your project and run:
    ~~~~~
    $ jekyll new my-website
    ~~~~~
