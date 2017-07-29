@@ -131,9 +131,9 @@ As Dave points out in [his guide](http://daverupert.com/2016/04/jekyll-on-window
    ~~~~~
    $ jekyll new my-website
    ~~~~~
-   This will create a folder called `my-website` containing the default Jekyll files. *(Note that I even needed to run this as sudo, otherwise would get a "not permitted" error that I couldn't figure out how to fix via chmod.)*
+   This will create a new folder called `my-website` containing the default Jekyll files. *(Note that I even needed to run this as sudo, otherwise would get a "not permitted" error that I couldn't figure out how to fix via chmod.)*
 
-3. To have Jekyll launch a local web server hosting your project, `cd` into your project folder and use the command:
+3. To have Jekyll launch a local web server hosting your project, `cd my-website` (or whatever you named your new Jekyll project) and use the command:
    ~~~~~
    $ jekyll serve
    ~~~~~
