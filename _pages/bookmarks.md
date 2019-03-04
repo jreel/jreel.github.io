@@ -46,7 +46,7 @@ Set the meta-description from the post.excerpt
 
 [Jekyll Navigation menu based on data files](https://protesilaos.com/codelog/jekyll-menu-data/)
 
-[Embed YouTube Videos in Jekyll without a Plugin](http://www.adamwadeharris.com/how-to-easily-embed-youtube-videos-in-jekyll-sites-without-a-plugin/)
+[Embed YouTube Videos in Jekyll without a Plugin](https://adam.garrett-harris.com/how-to-easily-embed-youtube-videos-in-jekyll-sites-without-a-plugin)
 
 [Building a Sitemap in Jekyll](http://davidensinger.com/2013/03/generating-a-sitemap-in-jekyll-without-a-plugin/)
 
